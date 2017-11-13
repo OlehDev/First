@@ -3,25 +3,72 @@
   <head>
     <meta charset="utf-8">
     <title>web site</title>
+    <style>
+    /*.parent {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      /*overflow: auto;*/
+    /*}*/
+
+  .block {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -125px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border: none;
+      }
+    }
+
+        header {
+          background-color: yellow;
+        }
+        .login {
+          float: right;
+        }
+        html { height: 100%; }
+    body {
+     margin: 0; 
+     height: 100%;
+     background: url(img/images.jpeg);
+     background-size: cover;
+   }
+    </style>
   </head>
   <body>
     <header>
-      <img src="img/web-studia-reaktiv_site.jpg" alt="img." width="400"height="180">
-      <p><i>Oleh Liashenyk</i></p>
-      <hr>
+      <center>
+        <nav>
+          <a href="index.html">головна</a>
+          <a href="about.html">про мене</a>
+          <a href="contact.html">контакти</a>
+        </nav>
+      </center>
     </header>
-    <nav>
-      <mark><a href="about.html">про мене</a></mark>
-      <mark><a href="contact.html">контакти</a></mark>
-      <mark><a href="index.html">головна</a></mark>
-    </nav>
-    <section>
-      <article>
-        <h2>Всім привіт! Вітаю вас на своїй персональні сторінці.</h2>
-        <img src="img/hello-clip-art-text.jpg" alt="hello"width="400"height="200">
-        </article>
+    <form action="">
+      <div class="login">
+        User name:<br>
+        <input type="text" name="userid">
+        <br>
+        User password:<br>
+        <input type="password" name="psw">
+        <div class="">
+          <input type="submit" name="" value="Login">
+        </div>
+      </div>
+    </form>
+    <section class="parent">
+        <h1 class="block"><p style="text-align:center;">Привіт я Олег.<br>Вітаю вас на своїй персональні сторінці</p></h1>
     </section>
-    <footer>Copyright 2017</footer>
-
   </body>
 </html>
